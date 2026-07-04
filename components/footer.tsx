@@ -20,7 +20,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-slate-700 hover:text-green-500 transition-all"
+              className="text-slate-700 hover:text-[#FF9500] transition-all"
             >
               <Github className="w-6 h-6" />
             </a>
@@ -29,7 +29,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-slate-700 hover:text-green-500 transition-all"
+              className="text-slate-700 hover:text-[#FF9500] transition-all"
             >
               <Linkedin className="w-6 h-6" />
             </a>
@@ -38,7 +38,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
-              className="text-slate-700 hover:text-green-500 transition-all"
+              className="text-slate-700 hover:text-[#FF9500] transition-all"
             >
               <Twitter className="w-6 h-6" />
             </a>
@@ -47,7 +47,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="text-slate-700 hover:text-green-500 transition-all"
+              className="text-slate-700 hover:text-[#FF9500] transition-all"
             >
               <Instagram className="w-6 h-6" />
             </a>

@@ -63,11 +63,11 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="py-20 bg-slate-100">
+    <section id="projects" className="py-20 bg-gradient-to-b from-white to-[#fff8f0]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-8 text-slate-800">My Apps</h2>
-        <p className="text-lg text-slate-700 mb-12 text-center max-w-3xl mx-auto">
-          Check out some of my recent Android app development work
+        <h2 className="text-3xl font-bold text-center mb-4 text-slate-800">My Apps</h2>
+        <p className="text-lg text-slate-600 mb-12 text-center max-w-3xl mx-auto">
+          Innovative Android applications built with modern technologies and best practices
         </p>
 
         <motion.div
@@ -79,45 +79,56 @@ export default function Projects() {
         >
           {projects.map((project, index) => (
             <motion.div key={index} variants={item}>
-              <Card className="h-full overflow-hidden hover:shadow-lg transition-shadow border-2 border-green-100">
-                <div className="relative h-[300px] w-full bg-slate-50">
+              <Card className="h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-2 border-[#FF9500] bg-white">
+                {/* Project Image Container */}
+                <div className="relative h-[280px] w-full bg-gradient-to-br from-[#fff8f0] to-[#ffe6cc] overflow-hidden border-b-2 border-[#FF9500]">
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
                     fill
-                    className="object-contain p-4"
+                    className="object-contain p-6 hover:scale-105 transition-transform duration-300"
                     priority={index < 2}
                   />
                 </div>
+                
                 <CardContent className="p-6">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Smartphone className="h-5 w-5 text-green-600" />
-                    <h3 className="text-xl font-bold text-slate-800">{project.title}</h3>
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="bg-[#FF9500] rounded-lg p-2 mt-1">
+                      <Smartphone className="h-5 w-5 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-800 leading-tight">{project.title}</h3>
                   </div>
-                  <p className="text-slate-700 mb-4">{project.description}</p>
+                  
+                  <p className="text-slate-700 text-sm mb-4 leading-relaxed">{project.description}</p>
 
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mb-5">
                     {project.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="outline" className="bg-[#f0f9f0] text-[#4CAF50] border-[#4CAF50]">
+                      <Badge key={tagIndex} className="bg-[#fff8f0] text-[#FF9500] border border-[#FF9500] hover:bg-[#FF9500] hover:text-white transition-colors">
                         {tag}
                       </Badge>
                     ))}
                   </div>
 
-                  <div className="flex gap-3 mt-auto">
+                  {/* Action Buttons */}
+                  <div className="flex gap-3 pt-4 border-t border-[#FFE6CC]">
+                    <Button
+                      asChild
+                      size="sm"
+                      className="flex-1 rounded-lg bg-[#FF9500] hover:bg-[#E68A00] text-white"
+                    >
+                      <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4 mr-2" /> View Code
+                      </Link>
+                    </Button>
                     <Button
                       asChild
                       size="sm"
                       variant="outline"
-                      className="rounded-full border-[#4CAF50] text-[#4CAF50] hover:bg-[#f0f9f0]"
+                      className="flex-1 rounded-lg border-[#FF9500] text-[#FF9500] hover:bg-[#fff8f0]"
                     >
-                      <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="h-4 w-4 mr-2" /> Code
-                      </Link>
-                    </Button>
-                    <Button asChild size="sm" className="rounded-full bg-[#4CAF50] hover:bg-[#3d8b40]">
                       <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4 mr-2" /> View Project
+                        <ExternalLink className="h-4 w-4 mr-2" /> Details
                       </Link>
                     </Button>
                   </div>

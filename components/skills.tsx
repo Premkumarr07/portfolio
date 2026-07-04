@@ -8,32 +8,32 @@ export default function Skills() {
   const skillCategories = [
     {
       title: "Languages",
-      icon: <Code className="h-8 w-8 text-[#4CAF50]" />,
+      icon: <Code className="h-8 w-8 text-[#FF9500]" />,
       skills: ["Kotlin", "Java", "Dart", "SQL", "JavaScript", "HTML/CSS"],
     },
     {
       title: "Frameworks & Architecture",
-      icon: <Layers className="h-8 w-8 text-[#4CAF50]" />,
+      icon: <Layers className="h-8 w-8 text-[#FF9500]" />,
       skills: ["Flutter", "Jetpack Compose", "MVVM", "Node.js", "Clean Architecture"],
     },
     {
       title: "APIs & Backend",
-      icon: <Server className="h-8 w-8 text-[#4CAF50]" />,
+      icon: <Server className="h-8 w-8 text-[#FF9500]" />,
       skills: ["RESTful APIs", "Google Maps API", "OpenAI API", "Razorpay/Stripe", "Firebase"],
     },
     {
       title: "Databases & Storage",
-      icon: <Layout className="h-8 w-8 text-[#4CAF50]" />,
+      icon: <Layout className="h-8 w-8 text-[#FF9500]" />,
       skills: ["Firebase", "SQLite", "PostgreSQL", "Room Database", "Firestore"],
     },
     {
       title: "Tools & DevOps",
-      icon: <Settings className="h-8 w-8 text-[#4CAF50]" />,
+      icon: <Settings className="h-8 w-8 text-[#FF9500]" />,
       skills: ["Android Studio", "Git", "CI/CD", "Agile/Scrum", "Google Play Console"],
     },
     {
       title: "Soft Skills",
-      icon: <PenTool className="h-8 w-8 text-[#4CAF50]" />,
+      icon: <PenTool className="h-8 w-8 text-[#FF9500]" />,
       skills: ["Problem Solving", "Teamwork", "Time Management", "Agile Methodology", "Communication"],
     },
   ]
@@ -70,7 +70,7 @@ export default function Skills() {
         >
           {skillCategories.map((category, index) => (
             <motion.div key={index} variants={item}>
-              <Card className="h-full hover:shadow-md transition-shadow border-2 border-green-100">
+              <Card className="h-full hover:shadow-lg transition-all border-2 border-[#FF9500] bg-gradient-to-br from-white to-[#fff8f0]">
                 <CardContent className="pt-6">
                   <div className="flex items-center mb-4">
                     {category.icon}
@@ -79,7 +79,7 @@ export default function Skills() {
                   <ul className="space-y-2">
                     {category.skills.map((skill, skillIndex) => (
                       <li key={skillIndex} className="flex items-center text-slate-700">
-                        <Code className="h-4 w-4 mr-2 text-green-500" />
+                        <div className="h-2 w-2 mr-2 rounded-full bg-[#FF9500]"></div>
                         <span>{skill}</span>
                       </li>
                     ))}
@@ -105,7 +105,7 @@ export default function Skills() {
               "Google Play Console",
               "Agile/Scrum",
             ].map((tech, index) => (
-              <div key={index} className="bg-[#f0f9f0] px-4 py-2 rounded-full text-sm text-[#4CAF50] border border-[#4CAF50]">
+              <div key={index} className="bg-[#fff8f0] px-4 py-2 rounded-full text-sm text-[#FF9500] border border-[#FF9500] hover:bg-[#FF9500] hover:text-white transition-colors">
                 {tech}
               </div>
             ))}

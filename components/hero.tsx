@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="text-center md:text-left md:w-1/2">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
             Android Developer <br />
-            <span className="text-[#4CAF50]">
+            <span className="text-[#FF9500]">
               <Typewriter
                 words={["Prem Kumar"]}
                 loop={false}
@@ -35,7 +35,7 @@ export default function Hero() {
             <a href="https://github.com/Premkumarr07" target="_blank" rel="noopener noreferrer">
               <Button
                 size="lg"
-                className="bg-[#4CAF50] hover:bg-[#3d8b40] text-white transition-all duration-300 shadow-md"
+                className="bg-[#FF9500] hover:bg-[#E68A00] text-white transition-all duration-300 shadow-md"
               >
                 View My Work
               </Button>
@@ -44,7 +44,7 @@ export default function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-[#4CAF50] text-[#4CAF50] hover:bg-[#4CAF50]/10 transition-all duration-300"
+                className="border-[#FF9500] text-[#FF9500] hover:bg-[#FF9500]/10 transition-all duration-300"
               >
                 Contact Me
               </Button>
@@ -56,21 +56,21 @@ export default function Hero() {
         <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center">
           <div className="relative">
             {/* Glow effect behind the Android */}
-            <div className="absolute -inset-4 bg-[#4CAF50]/20 rounded-full blur-xl"></div>
+            <div className="absolute -inset-4 bg-[#FF9500]/20 rounded-full blur-xl"></div>
 
             {/* Using regular img tag to ensure GIF animation works */}
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1738773732586.gif-izVFUVeQhSCYL94X5JqdFNuErBdfua.jpeg"
               alt="Android Developer"
               className="w-64 h-64 object-contain relative z-10"
-              style={{ filter: "drop-shadow(0 0 10px rgba(76, 175, 80, 0.5))" }}
+              style={{ filter: "drop-shadow(0 0 10px rgba(255, 149, 0, 0.5))" }}
             />
           </div>
         </div>
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#4CAF50] to-transparent opacity-30"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#FF9500] to-transparent opacity-30"></div>
     </section>
   )
 }

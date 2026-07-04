@@ -51,22 +51,22 @@ export default function Contact() {
 
   const contactInfo = [
     {
-      icon: <Mail className="h-6 w-6 text-green-600" />,
+      icon: <Mail className="h-6 w-6 text-[#FF9500]" />,
       title: "Email",
-      value: "contact@premkumar.com",
-      link: "mailto:contact@premkumar.com",
+      value: "premkumarshankar2002@gmail.com",
+      link: "mailto:premkumarshankar2002@gmail.com",
     },
     {
-      icon: <Phone className="h-6 w-6 text-green-600" />,
+      icon: <Phone className="h-6 w-6 text-[#FF9500]" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+91-9456812378",
+      link: "tel:+919456812378",
     },
     {
-      icon: <MapPin className="h-6 w-6 text-green-600" />,
+      icon: <MapPin className="h-6 w-6 text-[#FF9500]" />,
       title: "Location",
-      value: "San Francisco, CA",
-      link: "https://maps.google.com/?q=San+Francisco,+CA",
+      value: "Chandigarh, Punjab",
+      link: "https://maps.google.com/?q=Chandigarh,+Punjab",
     },
   ]
 
@@ -86,7 +86,7 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <Card className="border-2 border-green-100">
+            <Card className="border-2 border-[#FF9500] bg-gradient-to-br from-white to-[#fff8f0]">
               <CardContent className="p-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -101,7 +101,7 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="Your name"
                         required
-                        className="rounded-full border-green-200 focus:border-green-500 focus:ring-green-500"
+                        className="rounded-lg border-[#FFE6CC] focus:border-[#FF9500] focus:ring-[#FF9500]"
                       />
                     </div>
                     <div className="space-y-2">
@@ -116,7 +116,7 @@ export default function Contact() {
                         onChange={handleChange}
                         placeholder="Your email"
                         required
-                        className="rounded-full border-green-200 focus:border-green-500 focus:ring-green-500"
+                        className="rounded-lg border-[#FFE6CC] focus:border-[#FF9500] focus:ring-[#FF9500]"
                       />
                     </div>
                   </div>
@@ -132,7 +132,7 @@ export default function Contact() {
                       onChange={handleChange}
                       placeholder="Subject of your message"
                       required
-                      className="rounded-full border-green-200 focus:border-green-500 focus:ring-green-500"
+                      className="rounded-lg border-[#FFE6CC] focus:border-[#FF9500] focus:ring-[#FF9500]"
                     />
                   </div>
 
@@ -148,13 +148,13 @@ export default function Contact() {
                       placeholder="Your message"
                       rows={5}
                       required
-                      className="rounded-lg border-green-200 focus:border-green-500 focus:ring-green-500"
+                      className="rounded-lg border-[#FFE6CC] focus:border-[#FF9500] focus:ring-[#FF9500]"
                     />
                   </div>
 
                   <Button
                     type="submit"
-                    className="w-full rounded-full bg-green-500 hover:bg-green-600"
+                    className="w-full rounded-lg bg-[#FF9500] hover:bg-[#E68A00]"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
@@ -178,7 +178,7 @@ export default function Contact() {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <Card className="h-full border-2 border-green-100">
+            <Card className="h-full border-2 border-[#FF9500] bg-gradient-to-br from-white to-[#fff8f0]">
               <CardContent className="p-6 flex flex-col justify-between h-full">
                 <div>
                   <h3 className="text-xl font-bold mb-6 text-slate-800">Contact Information</h3>
@@ -187,7 +187,7 @@ export default function Contact() {
                       <a
                         key={index}
                         href={info.link}
-                        className="flex items-start hover:text-green-600 transition-colors text-slate-700"
+                        className="flex items-start hover:text-[#FF9500] transition-colors text-slate-700"
                         target={info.title === "Location" ? "_blank" : undefined}
                         rel={info.title === "Location" ? "noopener noreferrer" : undefined}
                       >
@@ -204,7 +204,7 @@ export default function Contact() {
                 <div className="mt-8">
                   <h4 className="font-medium mb-2 text-slate-800">Available for app development:</h4>
                   <p className="text-slate-700 flex items-center">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                    <CheckCircle className="h-4 w-4 text-[#FF9500] mr-2" />
                     Currently available for new Android app projects
                   </p>
                 </div>
