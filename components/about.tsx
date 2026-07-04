@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { Download, Github, Linkedin, Twitter, Instagram } from "lucide-react"
 
 export default function About() {
   return (
@@ -66,7 +67,7 @@ export default function About() {
             download
             className="px-6 py-3 bg-[#4CAF50] text-white font-semibold text-lg rounded-lg shadow-md hover:bg-[#3d8b40] transition-all duration-300 flex items-center"
           >
-            <i className="fas fa-download mr-2"></i> Resume
+            <Download className="w-5 h-5 mr-2" /> Resume
           </a>
         </div>
 
@@ -78,7 +79,7 @@ export default function About() {
             rel="noopener noreferrer"
             className="text-[#343a40] hover:text-[#4CAF50] transition-all"
           >
-            <i className="fab fa-github text-2xl"></i>
+            <Github className="w-6 h-6" />
           </a>
           <a
             href="https://www.linkedin.com/in/premkumar07/"
@@ -86,7 +87,7 @@ export default function About() {
             rel="noopener noreferrer"
             className="text-[#343a40] hover:text-[#4CAF50] transition-all"
           >
-            <i className="fab fa-linkedin text-2xl"></i>
+            <Linkedin className="w-6 h-6" />
           </a>
           <a
             href="https://x.com/Android100X"
@@ -94,7 +95,7 @@ export default function About() {
             rel="noopener noreferrer"
             className="text-[#343a40] hover:text-[#4CAF50] transition-all"
           >
-            <i className="fab fa-twitter text-2xl"></i>
+            <Twitter className="w-6 h-6" />
           </a>
           <a
             href="https://www.instagram.com/android100dev/#"
@@ -102,7 +103,7 @@ export default function About() {
             rel="noopener noreferrer"
             className="text-[#343a40] hover:text-[#4CAF50] transition-all"
           >
-            <i className="fab fa-instagram text-2xl"></i>
+            <Instagram className="w-6 h-6" />
           </a>
         </div>
       </div>
