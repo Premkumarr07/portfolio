@@ -23,15 +23,40 @@ export default function About() {
         </div>
 
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-lg text-[#343a40] mb-6">
-            I&apos;m a passionate Android developer with <span className="font-semibold text-[#4CAF50]">2+ years</span>{" "}
-            of experience in creating innovative and user-friendly mobile applications. My expertise includes{" "}
-            <span className="font-semibold">Java, Kotlin</span>, and the latest Android development tools and libraries.
+          <p className="text-lg text-[#343a40] mb-2 font-semibold">
+            Chandigarh, Punjab | +91-9456812378 | premkumarshankar2002@gmail.com
           </p>
           <p className="text-lg text-[#343a40] mb-6">
-            When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects,
-            or enjoying a good cup of coffee while brainstorming my next big app idea.
+            Motivated and detail-oriented Android Developer with hands-on experience in building scalable, user-friendly, and AI-enhanced mobile applications. Passionate about crafting efficient solutions and delivering seamless digital experiences.
           </p>
+          
+          <div className="bg-white rounded-lg p-6 border border-[#4CAF50] mb-6">
+            <h3 className="text-xl font-bold text-[#1a212e] mb-4">Current Experience</h3>
+            <p className="text-[#343a40] mb-2"><span className="font-semibold">Android Developer</span> at Antworks money (Aug 2025 – Present)</p>
+            <ul className="text-sm text-[#343a40] space-y-1">
+              <li>✓ Maintaining and updating Android applications for improved performance and stability</li>
+              <li>✓ Implemented new features and resolved production bugs to enhance user experience</li>
+              <li>✓ Optimized app performance and improved API integration efficiency</li>
+            </ul>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-4 mb-6">
+            <div className="bg-[#f0f9f0] p-4 rounded-lg border border-[#4CAF50]">
+              <p className="text-sm text-[#4CAF50] font-semibold">Education</p>
+              <p className="text-[#343a40] font-semibold">B.E. Electronics & Communication</p>
+              <p className="text-sm text-[#343a40]">Chandigarh University (2021-2025)</p>
+            </div>
+            <div className="bg-[#f0f9f0] p-4 rounded-lg border border-[#4CAF50]">
+              <p className="text-sm text-[#4CAF50] font-semibold">Certifications</p>
+              <p className="text-[#343a40] font-semibold">Android Development</p>
+              <p className="text-sm text-[#343a40]">UI/UX Design (Figma)</p>
+            </div>
+            <div className="bg-[#f0f9f0] p-4 rounded-lg border border-[#4CAF50]">
+              <p className="text-sm text-[#4CAF50] font-semibold">Languages</p>
+              <p className="text-[#343a40] font-semibold">Kotlin, Java, Dart</p>
+              <p className="text-sm text-[#343a40]">SQL, JavaScript, HTML/CSS</p>
+            </div>
+          </div>
         </div>
 
         {/* Download Resume Button */}
@@ -84,4 +109,3 @@ export default function About() {
     </section>
   )
 }
-

@@ -7,34 +7,34 @@ import { Code, Layout, Layers, PenTool, Server, Settings, Smartphone } from "luc
 export default function Skills() {
   const skillCategories = [
     {
-      title: "Android Development",
-      icon: <Smartphone className="h-8 w-8 text-green-600" />,
-      skills: ["Kotlin", "Java", "Android SDK", "Jetpack Compose", "XML Layouts"],
+      title: "Languages",
+      icon: <Code className="h-8 w-8 text-[#4CAF50]" />,
+      skills: ["Kotlin", "Java", "Dart", "SQL", "JavaScript", "HTML/CSS"],
     },
     {
-      title: "App Architecture",
-      icon: <Layers className="h-8 w-8 text-green-600" />,
-      skills: ["MVVM", "Clean Architecture", "Repository Pattern", "Dependency Injection", "Modularization"],
+      title: "Frameworks & Architecture",
+      icon: <Layers className="h-8 w-8 text-[#4CAF50]" />,
+      skills: ["Flutter", "Jetpack Compose", "MVVM", "Node.js", "Clean Architecture"],
     },
     {
-      title: "UI/UX Design",
-      icon: <PenTool className="h-8 w-8 text-green-600" />,
-      skills: ["Material Design", "Animation", "Custom Views", "Responsive Layouts", "Accessibility"],
+      title: "APIs & Backend",
+      icon: <Server className="h-8 w-8 text-[#4CAF50]" />,
+      skills: ["RESTful APIs", "Google Maps API", "OpenAI API", "Razorpay/Stripe", "Firebase"],
     },
     {
-      title: "Backend Integration",
-      icon: <Server className="h-8 w-8 text-green-600" />,
-      skills: ["RESTful APIs", "Retrofit", "GraphQL", "Firebase", "Room Database"],
+      title: "Databases & Storage",
+      icon: <Layout className="h-8 w-8 text-[#4CAF50]" />,
+      skills: ["Firebase", "SQLite", "PostgreSQL", "Room Database", "Firestore"],
     },
     {
-      title: "App Features",
-      icon: <Layout className="h-8 w-8 text-green-600" />,
-      skills: ["Push Notifications", "In-App Purchases", "Authentication", "Maps Integration", "Camera/Media"],
+      title: "Tools & DevOps",
+      icon: <Settings className="h-8 w-8 text-[#4CAF50]" />,
+      skills: ["Android Studio", "Git", "CI/CD", "Agile/Scrum", "Google Play Console"],
     },
     {
-      title: "DevOps & Deployment",
-      icon: <Settings className="h-8 w-8 text-green-600" />,
-      skills: ["CI/CD", "Google Play Console", "App Bundles", "Fastlane", "App Testing"],
+      title: "Soft Skills",
+      icon: <PenTool className="h-8 w-8 text-[#4CAF50]" />,
+      skills: ["Problem Solving", "Teamwork", "Time Management", "Agile Methodology", "Communication"],
     },
   ]
 
@@ -95,17 +95,17 @@ export default function Skills() {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               "Android Studio",
-              "Gradle",
-              "Git",
-              "Postman",
               "Firebase",
-              "Google Play Console",
+              "Git",
+              "SQLite",
+              "PostgreSQL",
               "Figma",
-              "JUnit",
-              "Espresso",
-              "Crashlytics",
+              "ExoPlayer",
+              "TensorFlow Lite",
+              "Google Play Console",
+              "Agile/Scrum",
             ].map((tech, index) => (
-              <div key={index} className="bg-green-100 px-4 py-2 rounded-full text-sm text-green-800">
+              <div key={index} className="bg-[#f0f9f0] px-4 py-2 rounded-full text-sm text-[#4CAF50] border border-[#4CAF50]">
                 {tech}
               </div>
             ))}
@@ -115,4 +115,3 @@ export default function Skills() {
     </section>
   )
 }
-

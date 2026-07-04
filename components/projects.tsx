@@ -11,39 +11,39 @@ import { ExternalLink, Github, Smartphone } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
-      title: "Ride Service App",
+      title: "GovtPrepAI – Smart Learning App",
       description:
-        "A comprehensive ride-sharing application with bid-based booking, city-to-city service, and advanced safety features.",
+        "AI-powered mobile app helping students prepare for government exams like SSC, Banking, and Railways with AI chatbot integration and offline question banks. Achieved 60% improvement in test engagement.",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-LDvjvAQ1hO6rYO7gSMEa4fme9ftRQP.png",
-      tags: ["Kotlin", "MVVM", "Google Maps", "Real-time Tracking", "Payment Gateway"],
-      liveUrl: "https://play.google.com/store/example",
-      githubUrl: "https://github.com/premkumar/ride-app",
+      tags: ["Flutter", "Firebase", "OpenAI API", "SQLite"],
+      liveUrl: "https://github.com/Premkumarr07",
+      githubUrl: "https://github.com/Premkumarr07",
     },
     {
-      title: "Travel Companion App",
+      title: "QuickEats – Food Delivery App",
       description:
-        "A feature-rich travel app with destination discovery, scheduling, package booking, and in-app messaging.",
+        "End-to-end food ordering and delivery app with multi-vendor support, location-based search, cart system, payment gateway, and real-time order tracking.",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Travel.jpg-Qvm3VZ8fV2t6DgGpBmlA8ucB7Cb76E.jpeg",
-      tags: ["Java", "Firebase", "Maps Integration", "Real-time Chat"],
-      liveUrl: "https://play.google.com/store/example",
-      githubUrl: "https://github.com/premkumar/travel-app",
+      tags: ["Flutter", "Firebase", "Razorpay", "Google Maps API"],
+      liveUrl: "https://github.com/Premkumarr07",
+      githubUrl: "https://github.com/Premkumarr07",
     },
     {
-      title: "Fashion E-Commerce App",
-      description: "An elegant fashion shopping app with seamless browsing, cart management, and secure checkout.",
+      title: "ShopNest – E-Commerce App",
+      description: "Full-featured shopping app with product listing, cart, wishlist, checkout, and order tracking functionality built with modern Android architecture.",
       image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Thumbnail-YjqW61IL5XvxhLRPopCzqukY1CyEug.png",
-      tags: ["Kotlin", "MVVM", "Payment Integration", "Firebase Auth"],
-      liveUrl: "https://play.google.com/store/example2",
-      githubUrl: "https://github.com/premkumar/fashion-app",
+      tags: ["Android SDK", "Firebase", "Jetpack Compose", "MVVM"],
+      liveUrl: "https://github.com/Premkumarr07",
+      githubUrl: "https://github.com/Premkumarr07",
     },
     {
-      title: "RTSP Streaming App",
-      description: "A professional live streaming application with profile management and comprehensive help system.",
+      title: "RTSP Player App",
+      description: "Professional IP camera video streaming application with optimized ExoPlayer buffering and real-time streaming capabilities using RTSP protocol.",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/App%20Mockups%2020-C76qutQ8rEZx9T6DRdpJWxGjw1D7z2.png",
-      tags: ["Java", "ExoPlayer", "RTSP Protocol", "Material Design"],
-      liveUrl: "https://play.google.com/store/example2",
-      githubUrl: "https://github.com/premkumar/streaming-app",
+      tags: ["Android SDK", "ExoPlayer", "RTSP", "Java"],
+      liveUrl: "https://github.com/Premkumarr07",
+      githubUrl: "https://github.com/Premkumarr07",
     },
   ]
 
@@ -98,7 +98,7 @@ export default function Projects() {
 
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="outline" className="bg-green-50 text-green-700 border-green-200">
+                      <Badge key={tagIndex} variant="outline" className="bg-[#f0f9f0] text-[#4CAF50] border-[#4CAF50]">
                         {tag}
                       </Badge>
                     ))}
@@ -109,15 +109,15 @@ export default function Projects() {
                       asChild
                       size="sm"
                       variant="outline"
-                      className="rounded-full border-green-500 text-green-600 hover:bg-green-50"
+                      className="rounded-full border-[#4CAF50] text-[#4CAF50] hover:bg-[#f0f9f0]"
                     >
                       <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4 mr-2" /> Code
                       </Link>
                     </Button>
-                    <Button asChild size="sm" className="rounded-full bg-green-500 hover:bg-green-600">
+                    <Button asChild size="sm" className="rounded-full bg-[#4CAF50] hover:bg-[#3d8b40]">
                       <Link href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4 mr-2" /> Play Store
+                        <ExternalLink className="h-4 w-4 mr-2" /> View Project
                       </Link>
                     </Button>
                   </div>
@@ -130,4 +130,3 @@ export default function Projects() {
     </section>
   )
 }
-
