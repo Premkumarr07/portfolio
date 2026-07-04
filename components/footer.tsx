@@ -1,3 +1,5 @@
+import { Github, Linkedin, Twitter, Instagram } from "lucide-react"
+
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -20,7 +22,7 @@ export default function Footer() {
               aria-label="GitHub"
               className="text-slate-700 hover:text-green-500 transition-all"
             >
-              <i className="fab fa-github text-xl"></i>
+              <Github className="w-6 h-6" />
             </a>
             <a
               href="https://www.linkedin.com/in/premkumar07/"
@@ -29,7 +31,7 @@ export default function Footer() {
               aria-label="LinkedIn"
               className="text-slate-700 hover:text-green-500 transition-all"
             >
-              <i className="fab fa-linkedin text-xl"></i>
+              <Linkedin className="w-6 h-6" />
             </a>
             <a
               href="https://x.com/Android100X"
@@ -38,7 +40,7 @@ export default function Footer() {
               aria-label="Twitter"
               className="text-slate-700 hover:text-green-500 transition-all"
             >
-              <i className="fab fa-twitter text-xl"></i>
+              <Twitter className="w-6 h-6" />
             </a>
             <a
               href="https://www.instagram.com/android100dev/#"
@@ -47,7 +49,7 @@ export default function Footer() {
               aria-label="Instagram"
               className="text-slate-700 hover:text-green-500 transition-all"
             >
-              <i className="fab fa-instagram text-xl"></i>
+              <Instagram className="w-6 h-6" />
             </a>
           </div>
         </div>
